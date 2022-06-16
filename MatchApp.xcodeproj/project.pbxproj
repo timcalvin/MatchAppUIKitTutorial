@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1112518285ADDD30091B9EE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1112517285ADDD30091B9EE /* CardModel.swift */; };
+		B111251A285ADEAE0091B9EE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1112519285ADEAE0091B9EE /* Card.swift */; };
+		B111251C285AE4870091B9EE /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111251B285AE4870091B9EE /* CardCollectionViewCell.swift */; };
 		F8BEDA65285A84B3006D0120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BEDA64285A84B3006D0120 /* AppDelegate.swift */; };
 		F8BEDA67285A84B3006D0120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BEDA66285A84B3006D0120 /* SceneDelegate.swift */; };
 		F8BEDA69285A84B3006D0120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BEDA68285A84B3006D0120 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1112517285ADDD30091B9EE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		B1112519285ADEAE0091B9EE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B111251B285AE4870091B9EE /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8BEDA61285A84B3006D0120 /* MatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BEDA64285A84B3006D0120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BEDA66285A84B3006D0120 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				F8BEDA64285A84B3006D0120 /* AppDelegate.swift */,
 				F8BEDA66285A84B3006D0120 /* SceneDelegate.swift */,
 				F8BEDA68285A84B3006D0120 /* ViewController.swift */,
+				B111251B285AE4870091B9EE /* CardCollectionViewCell.swift */,
+				B1112517285ADDD30091B9EE /* CardModel.swift */,
+				B1112519285ADEAE0091B9EE /* Card.swift */,
 				F8BEDA6A285A84B3006D0120 /* Main.storyboard */,
 				F8BEDA6D285A84B7006D0120 /* Assets.xcassets */,
 				F8BEDA6F285A84B7006D0120 /* LaunchScreen.storyboard */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BEDA69285A84B3006D0120 /* ViewController.swift in Sources */,
+				B1112518285ADDD30091B9EE /* CardModel.swift in Sources */,
+				B111251A285ADEAE0091B9EE /* Card.swift in Sources */,
 				F8BEDA65285A84B3006D0120 /* AppDelegate.swift in Sources */,
+				B111251C285AE4870091B9EE /* CardCollectionViewCell.swift in Sources */,
 				F8BEDA67285A84B3006D0120 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
