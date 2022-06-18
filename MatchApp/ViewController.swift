@@ -31,13 +31,31 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // Get a cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        // TODO: Configure cell
+        // Get the card from the card array
+        let card = cardsArray[indexPath.row]
         
+        // Configure cell
+        cell.configureCell(card: card)
         
         // Return cell
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Get a reference to the cell that was tapped
+        let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell
+        
+        // Check the status of the card to determine how to flip it
+        if cell?.card?.isFlipped == false {
+            // Flip card up
+            cell?.flipUp()
+        } else {
+            cell?.flipDown()
+        }
+        
+        
     }
 
 }
